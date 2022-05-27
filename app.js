@@ -70,7 +70,6 @@ function draw(userChoice, computerChoice) {
     computerChoice
   )}. It's a draw.`;
 }
-
 function game(userChoice) {
   const computerChoice = getComputerChoice();
   switch (userChoice + computerChoice) {
