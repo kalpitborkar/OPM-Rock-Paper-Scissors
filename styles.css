@@ -90,11 +90,14 @@ img {
   padding: 10px;
   margin: 0px 15px;
   transition: all 0.3s ease;
+  width: 150px;
+  height: auto;
 }
 
 .result {
     color: white;
-    font-size: 40px;
+    font-size: 35px;
+    margin-top: -15px;
   }
   
   .result > p {
@@ -118,7 +121,7 @@ img {
   padding: 10px;
   margin: 0px 15px;
   transition: all 0.3s ease;
-  width: 80px;
+  width: 90px;
   height: auto;
 }
 
@@ -130,3 +133,4 @@ img {
 .cross-text:hover{
     text-decoration: line-through;
 }
+

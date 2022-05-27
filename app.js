@@ -26,11 +26,16 @@ function win(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
+  // result_p.innerHTML = `${convertToWord(
+  //   userChoice
+  // )}${smallUserWord} beats ${convertToWord(
+  //   computerChoice
+  // )}${smallCompWord}. Saitama wins!`;
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}${smallUserWord} beats ${convertToWord(
+  )} beats ${convertToWord(
     computerChoice
-  )}${smallCompWord}. Saitama wins!`;
+  )}. Saitama wins!`;
 }
 
 function lose(userChoice, computerChoice) {
@@ -39,21 +44,31 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
+  // result_p.innerHTML = `${convertToWord(
+  //   userChoice
+  // )}${smallUserWord} loses to ${convertToWord(
+  //   computerChoice
+  // )}${smallCompWord}. Bang wins!`;
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}${smallUserWord} loses to ${convertToWord(
+  )} loses to ${convertToWord(
     computerChoice
-  )}${smallCompWord}. Bang wins!`;
+  )}. Bang wins!`;
 }
 
 function draw(userChoice, computerChoice) {
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
+  // result_p.innerHTML = `${convertToWord(
+  //   userChoice
+  // )}${smallUserWord} ties ${convertToWord(
+  //   computerChoice
+  // )}${smallCompWord}. It's a draw.`;
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}${smallUserWord} equals ${convertToWord(
+  )} ties ${convertToWord(
     computerChoice
-  )}${smallCompWord}. It's a draw.`;
+  )}. It's a draw.`;
 }
 
 function game(userChoice) {
