@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saitama RPS Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score-board">
+      <div id="user-label" class="badge">user</div>
+      <div id="computer-label" class="badge">comp</div>
+      <span id="user-score">0</span>:<span id="comupter-score">0</span>
+    </div>
+
+    <div class="player-images">
+      <div class="bang-image">
+        <img src="./images/players/bang.jpg" alt="" />
+      </div>
+      <div class="saitama-image">
+        <img src="./images/players/saitama.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="result">
+      <p>Paper covers rock. You win!</p>
+    </div>
+
+    <div class="result-icons">
+      <div class="result-icon" id="result-icon-saitama">
+        <img src="./images/hand-icons/rock.png" alt="" />
+      </div>
+      <div class="result-icon" id="result-icon-bang">
+        <img src="./images/hand-icons/paper.png" alt="" />
+      </div>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="r">
+        <img src="./images/hand-icons/rock.png" alt="" />
+      </div>
+      <div class="choice" id="p">
+        <img src="./images/hand-icons/paper.png" alt="" />
+      </div>
+      <div class="choice" id="s">
+        <img src="./images/hand-icons/scissors.png" alt="" />
+      </div>
+    </div>
+
+    <p id="action-message">Make your move</p>
+    <script src="app.js" , charset="utf-8"></script>
+  </body>
+</html>
