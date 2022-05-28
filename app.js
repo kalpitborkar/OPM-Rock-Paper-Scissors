@@ -7,6 +7,8 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const saitama_result_icon_div = document.getElementById("result-icon-saitama");
+const bang_result_icon_div = document.getElementById("result-icon-bang");
 
 function getComputerChoice() {
   const choices = ["r", "p", "s"];
@@ -26,11 +28,16 @@ function win(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
-  result_p.innerHTML = `${convertToWord(
-    userChoice
-  )} beats ${convertToWord(
+  result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(
     computerChoice
   )}. Saitama wins!`;
+
+  saitama_result_icon_div.classList.add("green-glow");
+  bang_result_icon_div.classList.add("red-glow");
+  setTimeout(function () {
+    saitama_result_icon_div.classList.remove("green-glow");
+    bang_result_icon_div.classList.remove("red-glow");
+  }, 300);
 }
 
 function lose(userChoice, computerChoice) {
@@ -39,21 +46,31 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
-  result_p.innerHTML = `${convertToWord(
-    userChoice
-  )} loses to ${convertToWord(
+  result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(
     computerChoice
   )}. Bang wins!`;
+
+  saitama_result_icon_div.classList.add("red-glow");
+  bang_result_icon_div.classList.add("green-glow");
+  setTimeout(function () {
+    saitama_result_icon_div.classList.remove("red-glow");
+    bang_result_icon_div.classList.remove("green-glow");
+  }, 300);
 }
 
 function draw(userChoice, computerChoice) {
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
-  result_p.innerHTML = `${convertToWord(
-    userChoice
-  )} ties ${convertToWord(
+  result_p.innerHTML = `${convertToWord(userChoice)} ties ${convertToWord(
     computerChoice
   )}. It's a draw.`;
+
+  saitama_result_icon_div.classList.add("gray-glow");
+  bang_result_icon_div.classList.add("gray-glow");
+  setTimeout(function () {
+    saitama_result_icon_div.classList.remove("gray-glow");
+    bang_result_icon_div.classList.remove("gray-glow");
+  }, 300);
 }
 function game(userChoice) {
   const computerChoice = getComputerChoice();
