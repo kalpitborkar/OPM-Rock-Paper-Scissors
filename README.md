@@ -5,3 +5,6 @@ Rock Paper Scissors game with One Punch Man theme.
 - [HTML5](https://html5.org/)
 - [CSS3](https://www.w3.org/Style/CSS/Overview.en.html)
 - [Vanilla Javascript](https://www.javascript.com/)
+
+## Play it [here](https://kalpitborkar.github.io/OPM-Rock-Paper-Scissors/)!
+https://kalpitborkar.github.io/OPM-Rock-Paper-Scissors/
