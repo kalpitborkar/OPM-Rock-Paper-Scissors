@@ -58,26 +58,6 @@ img {
   max-height: 100%;
 }
 
-/* .bang-image {
-  position: absolute;
-  top: 125px;
-  left: 825px;
-  width: 300px;
-  height: auto;
-  border: 3px solid white;
-  border-radius: 4px;
-}
-
-.saitama-image {
-  position: absolute;
-  top: 125px;
-  right: 825px;
-  width: 300px;
-  height: auto;
-  border: 3px solid white;
-  border-radius: 4px;
-} */
-
 .bang-image{
   position: absolute;
   top: 20%;
@@ -131,8 +111,6 @@ img {
   margin: 50px 0px;
   text-align: center;
   margin-top: 10px;
-  /* width: 100px;
-  height: auto; */
 }
 
 .choice {
@@ -168,4 +146,8 @@ img {
 
 .github-name{
   color: white;
+}
+
+a{
+  text-decoration: none;
 }

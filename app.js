@@ -26,11 +26,6 @@ function win(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
-  // result_p.innerHTML = `${convertToWord(
-  //   userChoice
-  // )}${smallUserWord} beats ${convertToWord(
-  //   computerChoice
-  // )}${smallCompWord}. Saitama wins!`;
   result_p.innerHTML = `${convertToWord(
     userChoice
   )} beats ${convertToWord(
@@ -44,11 +39,6 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
-  // result_p.innerHTML = `${convertToWord(
-  //   userChoice
-  // )}${smallUserWord} loses to ${convertToWord(
-  //   computerChoice
-  // )}${smallCompWord}. Bang wins!`;
   result_p.innerHTML = `${convertToWord(
     userChoice
   )} loses to ${convertToWord(
@@ -59,11 +49,6 @@ function lose(userChoice, computerChoice) {
 function draw(userChoice, computerChoice) {
   const smallUserWord = "user".fontsize(3).sup();
   const smallCompWord = "comp".fontsize(3).sup();
-  // result_p.innerHTML = `${convertToWord(
-  //   userChoice
-  // )}${smallUserWord} ties ${convertToWord(
-  //   computerChoice
-  // )}${smallCompWord}. It's a draw.`;
   result_p.innerHTML = `${convertToWord(
     userChoice
   )} ties ${convertToWord(
