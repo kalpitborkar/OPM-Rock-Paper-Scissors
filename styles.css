@@ -58,11 +58,11 @@ img {
   max-height: 100%;
 }
 
-.bang-image {
+/* .bang-image {
   position: absolute;
   top: 125px;
   left: 825px;
-  width: 275px;
+  width: 300px;
   height: auto;
   border: 3px solid white;
   border-radius: 4px;
@@ -76,7 +76,28 @@ img {
   height: auto;
   border: 3px solid white;
   border-radius: 4px;
+} */
+
+.bang-image{
+  position: absolute;
+  top: 20%;
+  width: 27%;
+  height: auto;
+  left: 66%;
+  border: 3px solid white;
+  border-radius: 4px;
 }
+
+.saitama-image{
+  position: absolute;
+  top: 20%;
+  width: 27%;
+  height: auto;
+  right: 66%;
+  border: 3px solid white;
+  border-radius: 4px;
+}
+
 
 .result-icons {
   margin: 20px 0px;
