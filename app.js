@@ -26,8 +26,6 @@ function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  const smallUserWord = "user".fontsize(3).sup();
-  const smallCompWord = "comp".fontsize(3).sup();
   result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(
     computerChoice
   )}. Saitama wins!`;
@@ -44,8 +42,6 @@ function lose(userChoice, computerChoice) {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
-  const smallUserWord = "user".fontsize(3).sup();
-  const smallCompWord = "comp".fontsize(3).sup();
   result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(
     computerChoice
   )}. Bang wins!`;
@@ -59,8 +55,6 @@ function lose(userChoice, computerChoice) {
 }
 
 function draw(userChoice, computerChoice) {
-  const smallUserWord = "user".fontsize(3).sup();
-  const smallCompWord = "comp".fontsize(3).sup();
   result_p.innerHTML = `${convertToWord(userChoice)} ties ${convertToWord(
     computerChoice
   )}. It's a draw.`;
@@ -94,17 +88,9 @@ function game(userChoice) {
 }
 
 function main() {
-  rock_div.addEventListener("click", function () {
-    game("r");
-  });
-
-  paper_div.addEventListener("click", function () {
-    game("p");
-  });
-
-  scissors_div.addEventListener("click", function () {
-    game("s");
-  });
+  rock_div.addEventListener("click", () => game("r"));
+  paper_div.addEventListener("click", () => game("p"));
+  scissors_div.addEventListener("click", () => game("s"));
 }
 
 main();
