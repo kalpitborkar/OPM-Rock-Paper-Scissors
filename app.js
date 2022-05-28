@@ -22,20 +22,27 @@ function convertToWord(letter) {
   return "Scissors";
 }
 
+function updateResultIcons(userChoice, computerChoice){
+  document.getElementById("result-icon-saitama-img").src = "./images/hand-icons/"+convertToWord(userChoice).toLowerCase()+".png";
+  document.getElementById("result-icon-bang-img").src = "./images/hand-icons/"+convertToWord(computerChoice).toLowerCase()+".png";
+}
+
 function win(userChoice, computerChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(
     computerChoice
-  )}. Saitama wins!`;
-
+    )}. Saitama wins!`;
+    
   saitama_result_icon_div.classList.add("green-glow");
   bang_result_icon_div.classList.add("red-glow");
   setTimeout(function () {
     saitama_result_icon_div.classList.remove("green-glow");
     bang_result_icon_div.classList.remove("red-glow");
   }, 300);
+  
+  updateResultIcons(userChoice, computerChoice);
 }
 
 function lose(userChoice, computerChoice) {
@@ -52,6 +59,8 @@ function lose(userChoice, computerChoice) {
     saitama_result_icon_div.classList.remove("red-glow");
     bang_result_icon_div.classList.remove("green-glow");
   }, 300);
+
+  updateResultIcons(userChoice, computerChoice);
 }
 
 function draw(userChoice, computerChoice) {
@@ -65,6 +74,8 @@ function draw(userChoice, computerChoice) {
     saitama_result_icon_div.classList.remove("gray-glow");
     bang_result_icon_div.classList.remove("gray-glow");
   }, 300);
+
+  updateResultIcons(userChoice, computerChoice);
 }
 function game(userChoice) {
   const computerChoice = getComputerChoice();
